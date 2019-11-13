@@ -1,0 +1,16 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.page-footer {
+  background-color: $light-grey;
+}
+
+.page-footer__logo {
+  display: block;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.page-footer__social {
+  margin-bottom: 20px;
+}

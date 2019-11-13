@@ -1,0 +1,41 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.intro__container {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 25px;
+  padding-bottom: 167px;
+}
+
+.intro__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  @include font();
+  @include font-resize(36px, 36px);
+  color: #ffffff;
+}
+
+.intro__slogan {
+  @include font-resize(14px, 14px);
+  color: $white;
+  text-transform: uppercase;
+}
+
+.intro__img {
+  display: block;
+  margin: -140px auto 0;
+}
+
+.intro__link {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  background-color: $green;
+  @include font-resize(14px, 18px);
+  color: $white;
+  text-transform: uppercase;
+}

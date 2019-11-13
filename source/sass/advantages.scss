@@ -1,0 +1,46 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.advantages__heading {
+  @include font-resize(36px, 60px);
+  text-align: left;
+}
+
+.advantages__list {
+  @include clear-list();
+  text-align: left;
+  font-family: "Arial", "sens-serif";
+  @include font-resize(14px, 18px);
+  color: #444444;
+}
+
+.advantages__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 80px;
+}
+
+.advantages__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  z-index: 0;
+}
+
+.advantages__text {
+  &--leaf::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    z-index: 0;
+  }
+}
