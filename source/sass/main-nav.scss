@@ -3,12 +3,14 @@
 
 .main-nav__list {
   display: none;
+
   @include clear-list();
   text-align: center;
 }
 
 .main-nav__link {
   display: block;
+
   @include font("Medium");
   @include font-resize(20px, 20px, 500);
   color: $black;

@@ -3,6 +3,7 @@
 
 .social__list {
   display: flex;
+
   @include clear-list();
   flex-direction: row;
   justify-content: space-evenly;

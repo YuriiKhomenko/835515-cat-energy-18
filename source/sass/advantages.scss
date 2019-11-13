@@ -8,9 +8,9 @@
 
 .advantages__list {
   @include clear-list();
-  text-align: left;
-  font-family: "Arial", "sens-serif";
   @include font-resize(14px, 18px);
+  text-align: left;
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
@@ -30,17 +30,4 @@
   height: 60px;
   background-color: $green;
   z-index: 0;
-}
-
-.advantages__text {
-  &--leaf::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: $green;
-    z-index: 0;
-  }
 }

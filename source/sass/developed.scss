@@ -12,6 +12,7 @@
   padding-top: 10px;
   padding-bottom: 35px;
   color: #444444;
-  font-family: "Arial", "sans-serif";
+  font-family: "Arial", sans-serif;
+
   @include font-resize(16px, 16px);
 }
