@@ -1,0 +1,38 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.product-list {
+  @include clear-list();
+}
+
+.product-list__item {
+  margin-bottom: 25px;
+  border-top: 1px solid #ededed;
+  min-height: 210px;
+}
+
+.product-list__item-container {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.product-list__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.product-list__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list__title {
+  @include font-resize(16px, 20px);
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+}

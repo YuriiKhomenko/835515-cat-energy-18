@@ -1,2 +1,7 @@
 @import "mixins.scss";
 @import "variables.scss";
+
+.catalog__heading {
+  @include font-resize(36px, 60px);
+  margin: 0;
+}
