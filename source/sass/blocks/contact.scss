@@ -1,0 +1,9 @@
+.contact {
+  background-color: $bg-general-color;
+}
+
+.contact__slogan {
+  @include font-resize(16px, 20px);
+  text-transform: uppercase;
+  font-weight: 400;
+}
