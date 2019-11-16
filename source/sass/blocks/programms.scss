@@ -1,0 +1,102 @@
+.programms {
+  @include clear-list();
+}
+
+.programms__item {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: $bg-light-grey;
+}
+
+.programms__title {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+  padding-left: 70px;
+  padding-top: 40px;
+
+  @include font-resize(24px, 37.02px);
+  text-transform: uppercase;
+}
+
+.programms__title--slim::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 40px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.programms__title--slim::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 50px;
+  height: 51px;
+  background-color: $bg-green-color;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.programms__title--pro::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 40px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.programms__title--pro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 50px;
+  height: 51px;
+  background-color: $bg-green-color;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.programms__text {
+  margin: 0;
+  padding-bottom: 25px;
+  font-family: "Arial", sans-serif;
+
+  @include font-resize(14px, 18px);
+  border-bottom: 1px solid $border-dark-grey;
+  color: $text-dark-grey-color;
+}
+
+.programms__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 0;
+  padding-right: 35px;
+
+  @include font-resize(16px, 16px);
+  text-transform: uppercase;
+  color: $text-general-color;
+}
+
+.programms__link::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 24px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}

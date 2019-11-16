@@ -1,0 +1,15 @@
+@mixin font($font-type: "Regular") {
+  font-family: "Oswald " + $font-type, "Arial", sans-serif;
+}
+
+@mixin font-resize($font-size, $line-height, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin clear-list() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

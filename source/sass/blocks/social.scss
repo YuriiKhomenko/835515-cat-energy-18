@@ -1,0 +1,14 @@
+.social__list {
+  display: flex;
+
+  @include clear-list();
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 1px solid $border-dark-grey;
+  border-bottom: 1px solid $border-dark-grey;
+}
+
+.social__link {
+  display: block;
+  padding: 22px 0;
+}

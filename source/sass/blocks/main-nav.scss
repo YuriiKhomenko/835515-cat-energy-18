@@ -1,0 +1,16 @@
+.main-nav__list {
+  display: none;
+
+  @include clear-list();
+  text-align: center;
+}
+
+.main-nav__link {
+  display: block;
+
+  @include font("Medium");
+  @include font-resize(20px, 20px, 500);
+  color: $text-general-color;
+  padding: 24px 0;
+  border-top: 1px solid $border-dark-grey;
+}

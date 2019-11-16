@@ -1,0 +1,30 @@
+.advantages__heading {
+  @include font-resize(36px, 60px);
+  text-align: left;
+}
+
+.advantages__list {
+  @include clear-list();
+  @include font-resize(14px, 18px);
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  color: $text-dark-grey-color;
+}
+
+.advantages__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 80px;
+}
+
+.advantages__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-green-color;
+  z-index: 0;
+}

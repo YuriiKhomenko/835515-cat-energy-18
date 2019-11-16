@@ -1,0 +1,10 @@
+.button {
+  display: block;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  background-color: $bg-green-color;
+
+  @include font-resize(14px, 18px);
+  color: $text-white-color;
+  text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+.product-table {
+  @include font-resize(12px, 16px);
+  font-family: "Arial", sans-serif;
+}
+
+.product-table__data:nth-child(1n) {
+  text-align: left;
+}
+
+.product-table__data:nth-child(2n) {
+  text-align: right;
+}
