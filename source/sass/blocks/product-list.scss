@@ -1,13 +1,10 @@
-@import "mixins.scss";
-@import "variables.scss";
-
 .product-list {
   @include clear-list();
 }
 
 .product-list__item {
   margin-bottom: 25px;
-  border-top: 1px solid #ededed;
+  border-top: 1px solid $border-light-grey;
   min-height: 210px;
 }
 
@@ -38,7 +35,7 @@
 }
 
 .product-list__item--show-all {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid $border-light-grey;
 }
 
 .product-list__item--show-all .product-list__title {
@@ -71,9 +68,9 @@
 .product-list__item--show-all .product-list__button {
   @include font-resize(16px, 20px);
   border: none;
-  color: #444444;
+  color: $text-dark-grey-color;
   text-transform: uppercase;
-  background-color: $light-grey;
+  background-color: $bg-light-grey;
   display: block;
   width: 100%;
   padding: 10px 0;

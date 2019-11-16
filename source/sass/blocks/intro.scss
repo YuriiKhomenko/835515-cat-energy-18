@@ -1,6 +1,3 @@
-@import "mixins.scss";
-@import "variables.scss";
-
 .intro__container {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: #63a73a;
@@ -17,12 +14,12 @@
 
   @include font();
   @include font-resize(36px, 36px);
-  color: #ffffff;
+  color: $text-white-color;
 }
 
 .intro__slogan {
   @include font-resize(14px, 14px);
-  color: $white;
+  color: $text-white-color;
   text-transform: uppercase;
 }
 

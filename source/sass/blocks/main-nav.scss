@@ -1,6 +1,3 @@
-@import "mixins.scss";
-@import "variables.scss";
-
 .main-nav__list {
   display: none;
 
@@ -13,7 +10,7 @@
 
   @include font("Medium");
   @include font-resize(20px, 20px, 500);
-  color: $black;
+  color: $text-general-color;
   padding: 24px 0;
-  border-top: 1px solid $dark-grey;
+  border-top: 1px solid $border-dark-grey;
 }

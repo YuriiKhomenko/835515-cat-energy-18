@@ -1,6 +1,3 @@
-@import "variables.scss";
-@import "mixins.scss";
-
 .developed {
   display: flex;
   flex-direction: row;
@@ -11,7 +8,7 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 35px;
-  color: #444444;
+  color: $text-dark-grey-color;
   font-family: "Arial", sans-serif;
 
   @include font-resize(16px, 16px);
