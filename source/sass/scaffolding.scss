@@ -20,6 +20,12 @@ body {
   background-color: $bg-general-color;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
 a {
   text-decoration: none;
 }

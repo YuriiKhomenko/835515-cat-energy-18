@@ -19,3 +19,16 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__menu-button {
+    display: none;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: none;
+  }
+}

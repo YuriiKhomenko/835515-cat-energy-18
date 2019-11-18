@@ -27,3 +27,40 @@
   display: block;
   margin: -140px auto 0;
 }
+
+@media (min-width: $tablet-width) {
+  .intro__container {
+    background-color: $bg-general-color;
+    background-image: none;
+    padding-left: 90px;
+  }
+
+  .intro__heading {
+    color: $text-general-color;
+    margin-bottom: 40px;
+    width: 70%;
+
+    @include font-resize(60px, 60px);
+  }
+
+  .intro__slogan {
+    @include font-resize(20px, 20px);
+    color: #000000;
+  }
+
+  .intro__img {
+    margin: -140px auto 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  .intro__link {
+    position: absolute;
+    padding: 10px 25px;
+    top: -600px;
+    left: 120px;
+
+    @include font-resize(20px, 20px);
+  }
+}

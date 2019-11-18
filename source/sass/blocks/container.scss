@@ -2,3 +2,11 @@
   padding: 0 20px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    position: relative;
+    padding: 0 30px;
+    text-align: left;
+  }
+}
