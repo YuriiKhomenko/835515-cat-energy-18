@@ -36,3 +36,19 @@
     border-bottom: 2px solid $bg-green-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 720px;
+    z-index: 1;
+  }
+
+  .main-nav__link {
+    @include font-resize(20px, 24.85px);
+    color: #ffffff;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
+}

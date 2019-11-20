@@ -10,3 +10,13 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: left;
+  }
+}

@@ -161,3 +161,54 @@
     top: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__item {
+    width: 570px;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .programms__title {
+    padding-top: 80px;
+    padding-left: 170px;
+    margin-bottom: 75px;
+  }
+
+  .programms__title--slim::before {
+    left: 0;
+    top: 40px;
+    width: 70px;
+    height: 97px;
+  }
+
+  .programms__title--slim::after {
+    left: 0;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programms__title--pro::before {
+    left: 0;
+    top: 40px;
+    width: 134px;
+    height: 56px;
+  }
+
+  .programms__title--pro::after {
+    left: 0;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programms__text {
+    padding-right: 50px;
+  }
+}

@@ -2,10 +2,13 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+.page-header__wrapper {
+  text-align: center;
+}
+
 .page-header__top {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 20px 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -21,14 +24,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
   .page-header__menu-button {
     display: none;
   }
 
   .page-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__top {
+    width: 610px;
   }
 }
