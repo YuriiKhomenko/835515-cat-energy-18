@@ -10,3 +10,16 @@
 .product-table__data:nth-child(2n) {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .product-table {
+    @include font-resize(16px, 16px);
+    border-collapse: collapse;
+  }
+
+  .product-table__data {
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
