@@ -39,8 +39,26 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 60px;
+  }
+
   .page-header__top {
-    width: 610px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .page-header__top {
+    width: 50%;
   }
 }
