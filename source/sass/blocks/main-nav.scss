@@ -3,6 +3,7 @@
 
   @include clear-list();
   text-align: center;
+  text-transform: uppercase;
 }
 
 .main-nav__link {
@@ -38,6 +39,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__item:first-child {
+    padding-left: 130px;
+  }
+
   .main-nav__link {
     @include font-resize(20px, 24.85px);
     color: #ffffff;
