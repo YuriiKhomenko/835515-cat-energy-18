@@ -1,14 +1,31 @@
 .intro__container {
+  position: relative;
+  text-align: center;
+}
+
+.intro__container::before {
+  content: "";
+  position: absolute;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: #63a73a;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 25px;
-  padding-bottom: 167px;
-  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 305px;
+  z-index: -1;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .intro__heading {
+  order: 1;
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
@@ -20,28 +37,34 @@
 
 .intro__slogan {
   @include font-resize(14px, 14px);
+  order: 2;
   color: $text-white-color;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .intro__img {
-  display: block;
-  margin: -140px auto 0;
+  order: 3;
+  align-self: center;
 }
 
 .intro__link {
+  order: 4;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .intro__container::before {
+    display: none;
+  }
+
   .intro__wrapper {
     text-align: left;
+    padding-top: 0;
     padding-left: 120px;
-    position: relative;
   }
 
   .intro__container {
-    background-color: $bg-general-color;
     background-image: none;
   }
 
@@ -49,6 +72,7 @@
     color: $text-general-color;
     margin-bottom: 40px;
     padding-right: 190px;
+    word-break: break-word;
 
     @include font-resize(60px, 60px);
   }
@@ -59,18 +83,17 @@
   }
 
   .intro__img {
-    margin: -140px auto 0;
+    order: 4;
     width: 709px;
     height: 609px;
+    margin-top: -90px;
     z-index: -1;
   }
 
   .intro__link {
-    position: absolute;
+    order: 3;
+    width: 245px;
     padding: 10px 25px;
-    top: 390px;
-    left: auto;
-    margin-left: 90px;
 
     @include font-resize(20px, 20px);
   }
@@ -79,6 +102,10 @@
 @media (min-width: $desktop-width) {
   .intro {
     position: relative;
+  }
+
+  .intro__container {
+    margin-bottom: 120px;
   }
 
   .intro::before {
@@ -94,10 +121,6 @@
     z-index: -1;
   }
 
-  .intro__container {
-    background-color: transparent;
-  }
-
   .intro__heading {
     padding-right: 50%;
     margin-bottom: 40px;
@@ -105,8 +128,10 @@
     @include font-resize(60px, 60px);
   }
 
-  .intro__link {
-    top: 260px;
-    margin-left: 80px;
+  .intro__img {
+    margin-top: -310px;
+    margin-left: 190px;
+    width: 552px;
+    height: 499px;
   }
 }

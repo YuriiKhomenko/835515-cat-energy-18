@@ -1,7 +1,6 @@
 .product-list {
-  @include clear-list();
-  max-width: 520px;
-  margin: 0 auto;
+  list-style: none;
+  padding: 0;
 }
 
 .product-list__item {
@@ -83,8 +82,6 @@
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
-    max-width: none;
     justify-content: space-between;
     padding: 0 30px;
   }
@@ -146,8 +143,6 @@
 
 @media (min-width: $desktop-width) {
   .product-list {
-    width: 1300px;
-    margin: 0 auto;
     padding: 0 40px;
   }
 
