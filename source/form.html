@@ -9,28 +9,27 @@
 </head>
 <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Cat Energy</h1>
-    <div class="container">
+    <div class="page-header__wrapper container">
       <div class="page-header__top">
-        <a class="page-header__logo" href="#">
+        <a class="page-header__logo" href="index.html">
           <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
         </a>
         <button class="page-header__menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main>
     <section class="program">
@@ -131,7 +130,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="container page-footer__wrapper">
       <a class="page-footer__logo">
         <img width="128" height="24" src="img/logo-footer.svg" alt="Лого Cat Energy">
       </a>

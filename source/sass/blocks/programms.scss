@@ -100,3 +100,115 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .programms__item {
+    margin-bottom: 30px;
+    padding: 0 50px;
+  }
+
+  .programms__title {
+    @include font-resize(36px, 37.02px);
+    padding-left: 0;
+  }
+
+  .programms__title--slim::before {
+    left: 420px;
+    top: 40px;
+    width: 140px;
+    height: 194px;
+  }
+
+  .programms__title--slim::after {
+    left: 430px;
+    top: 40px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programms__title--pro::before {
+    left: 420px;
+    top: 40px;
+    width: 268px;
+    height: 112px;
+  }
+
+  .programms__title--pro::after {
+    left: 430px;
+    top: 40px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programms__text {
+    @include font-resize(16px, 24px);
+    padding-right: 235px;
+    border: none;
+  }
+
+  .programms__text--pro {
+    padding-right: 265px;
+  }
+
+  .programms__link {
+    @include font-resize(20px, 20px);
+    padding: 55px 0;
+    padding-right: 35px;
+  }
+
+  .programms__link::before {
+    left: 130px;
+    top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programms {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programms__item {
+    width: 570px;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .programms__title {
+    padding-top: 80px;
+    padding-left: 170px;
+    margin-bottom: 75px;
+  }
+
+  .programms__title--slim::before {
+    left: 0;
+    top: 40px;
+    width: 70px;
+    height: 97px;
+  }
+
+  .programms__title--slim::after {
+    left: 0;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programms__title--pro::before {
+    left: 0;
+    top: 40px;
+    width: 134px;
+    height: 56px;
+  }
+
+  .programms__title--pro::after {
+    left: 0;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programms__text {
+    padding-right: 50px;
+  }
+}

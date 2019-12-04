@@ -1,5 +1,6 @@
 .product-list {
-  @include clear-list();
+  list-style: none;
+  padding: 0;
 }
 
 .product-list__item {
@@ -74,4 +75,104 @@
   display: block;
   width: 100%;
   padding: 10px 0;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .product-list__item-container {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .product-list__item {
+    border: none;
+    flex-direction: column;
+    margin-bottom: 140px;
+    width: 324px;
+    background-color: #f2f2f2;
+  }
+
+  .product-list__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .product-list__title {
+    @include font-resize(20px, 20px);
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .product-list__link {
+    @include font-resize(16px, 20px);
+    margin-bottom: 40px;
+  }
+
+  .product-list__item--show-all {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+  }
+
+  .product-list__item--show-all .product-list__title {
+    margin-bottom: 30px;
+    padding-top: 160px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .product-list__item--show-all .product-list__text {
+    @include font-resize(16px, 16px);
+    margin-bottom: 80px;
+    padding: 0 30px;
+  }
+
+  .product-list__item--show-all .product-list__title::before {
+    top: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-list {
+    padding: 0 40px;
+  }
+
+  .product-list__item {
+    width: 245px;
+  }
+
+  .product-list__wrapper {
+    margin-bottom: 35px;
+  }
+
+  .product-list__title {
+    margin-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .product-list__item--show-all .product-list__title {
+    margin-bottom: 25px;
+    padding-top: 160px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .product-list__item--show-all .product-list__text {
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .product-list__item--show-all .product-list__title::before {
+    top: 70px;
+  }
 }

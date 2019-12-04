@@ -3,6 +3,7 @@
 
   @include clear-list();
   text-align: center;
+  text-transform: uppercase;
 }
 
 .main-nav__link {
@@ -13,4 +14,49 @@
   color: $text-general-color;
   padding: 24px 0;
   border-top: 1px solid $border-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    padding-left: 35px;
+  }
+
+  .main-nav__link {
+    border: none;
+    padding: 20px 0;
+
+    @include font("Regular");
+    @include font-resize(18px, 24.85px);
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $bg-green-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item:first-child {
+    padding-left: 130px;
+  }
+
+  .main-nav__link {
+    @include font-resize(20px, 24.85px);
+    color: #ffffff;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .main-nav__list--catalog .main-nav__link {
+    color: #000000;
+  }
+
+  .main-nav__list--catalog .main-nav__link--active {
+    border-bottom: 2px solid #68b738;
+  }
 }

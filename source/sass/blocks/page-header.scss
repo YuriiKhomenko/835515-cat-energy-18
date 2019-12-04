@@ -19,3 +19,42 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__menu-button {
+    display: none;
+  }
+
+  .page-header {
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 60px;
+  }
+
+  .page-header__top {
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__top {
+    padding-top: 50px;
+    width: 50%;
+  }
+
+  .page-header__nav {
+    padding-top: 50px;
+    width: 50%;
+  }
+}
