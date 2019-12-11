@@ -1,3 +1,198 @@
+.extra {
+  position: relative;
+
+  margin-bottom: 35px;
+}
+
+.extra::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 20px;
+  z-index: -1;
+
+  width: auto;
+  height: 3px;
+
+  background-color: #68b738;
+}
+
+.extra__heading {
+  margin: 0;
+  margin-bottom: 35px;
+
+  width: 245px;
+
+  @include font-resize(24px, 24px);
+
+  background-color: #ffffff;
+}
+
 .extra__list {
   @include clear-list();
+  margin-bottom: 40px;
+}
+
+.extra__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra__item {
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include font-resize(16px, 16px);
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @include font-resize(14px, 14px);
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.extra__quantity {
+  margin: 0;
+}
+
+.extra__button {
+  margin-bottom: 0;
+
+  text-align: center;
+}
+
+.extra__promo {
+  text-align: center;
+
+  background-color: #71b548;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extra__text {
+  position: relative;
+
+  margin: 0;
+  padding: 190px 55px 40px;
+
+  @include font-resize(16px, 20px);
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.extra__text::before {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+
+  width: 55px;
+  height: 60px;
+
+  background-image: url("../img/icon-gift.svg");
+
+  transform: translateX(-50%);
+
+  content: "";
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 75px;
+  }
+
+  .extra::before {
+    left: 0;
+  }
+
+  .extra__heading {
+    margin-bottom: 75px;
+
+    width: 410px;
+
+    @include font-resize(36px, 36px);
+    text-align: center;
+  }
+
+  .extra__list {
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+  }
+
+  .extra__item-wrapper {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .extra__item:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .extra__item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .extra__data {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+  }
+
+  .extra__title {
+    margin: 0;
+
+    @include font-resize(20px, 20px);
+  }
+
+  .extra__info {
+    margin: 0;
+
+    @include font-resize(16px, 20px);
+  }
+
+  .extra__price {
+    width: 95px;
+
+    text-align: right;
+    word-break: break-all;
+  }
+
+  .extra__button {
+    @include font-resize(16px, 20px);
+  }
+
+  .extra__promo {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .extra__text {
+    padding: 75px 125px 70px 425px;
+
+    text-align: left;
+  }
+
+  .extra__text::before {
+    top: 50%;
+    left: 100px;
+
+    transform: translateY(-50%);
+  }
 }

@@ -1,9 +1,17 @@
+.catalog {
+  margin-bottom: 30px;
+}
+
 .catalog__heading {
   @include font-resize(36px, 60px);
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 70px;
+  }
+
   .catalog__heading {
     @include font-resize(60px, 60px);
     margin-bottom: 100px;
