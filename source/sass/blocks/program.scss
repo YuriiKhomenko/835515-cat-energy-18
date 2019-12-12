@@ -1,3 +1,18 @@
-.program {
-  background-color: $bg-general-color;
+.program__heading {
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  @include font-resize(36px, 60px);
+  color: #111111;
+}
+
+.program__title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding-right: 45px;
+
+  @include font-resize(14px, 18px);
+  color: #111111;
+  text-align: left;
+  text-transform: uppercase;
 }
