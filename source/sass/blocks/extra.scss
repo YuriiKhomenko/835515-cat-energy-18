@@ -25,6 +25,7 @@
   width: 245px;
 
   @include font-resize(24px, 24px);
+  word-break: break-all;
 
   background-color: #ffffff;
 }
@@ -52,6 +53,7 @@
   @include font-resize(16px, 16px);
   text-align: left;
   text-transform: uppercase;
+  word-break: break-all;
   color: #222222;
 }
 
@@ -184,7 +186,10 @@
   }
 
   .extra__text {
-    padding: 75px 125px 70px 425px;
+    padding-top: 75px;
+    padding-right: 125px;
+    padding-bottom: 70px;
+    padding-left: 425px;
 
     text-align: left;
   }
@@ -194,5 +199,87 @@
     left: 100px;
 
     transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extra__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__heading {
+    margin-left: -40px;
+    margin-bottom: 80px;
+
+    width: 415px;
+  }
+
+  .extra__list {
+    margin-bottom: 0;
+
+    width: 895px;
+
+    border: none;
+  }
+
+  .extra__item:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .extra__item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+   border-bottom: 1px solid #cdcdcd;
+  }
+
+  .extra__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+  }
+
+  .extra__data {
+    margin-bottom: 0;
+  }
+
+  .extra__title {
+    width: 325px;
+  }
+
+  .extra__quantity {
+    width: 245px;
+  }
+
+  .extra__price {
+    margin-right: 35px;
+
+    width: 45px;
+
+    text-align: left;
+  }
+
+  .extra__button {
+    width: 245px;
+  }
+
+  .extra__promo {
+    width: 245px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .extra__text {
+    padding: 0;
+    padding: 190px 40px 45px;
+
+    text-align: center;
+  }
+
+  .extra__text::before {
+    top: 40%;
   }
 }

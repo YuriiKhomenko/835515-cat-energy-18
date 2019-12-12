@@ -151,6 +151,10 @@
     padding: 0 40px;
   }
 
+  .product-list > li:nth-last-of-type(-n+2) {
+    margin-bottom: 140px;
+  }
+
   .product-list__item {
     width: 245px;
   }
