@@ -4,10 +4,6 @@
   border: none;
 }
 
-.form__fieldset--underline {
-  border-bottom: 1px solid #ededed;
-}
-
 .form__list {
   @include clear-list();
 }
@@ -47,7 +43,13 @@
 
 .form__list--radio {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  border: 1px solid #ededed;
 }
 
 .form__input--radio {
@@ -194,6 +196,10 @@
   }
 }
 
+.form-wrapper {
+  text-align: center;
+}
+
 .form__button {
   margin-bottom: 25px;
   width: 100%;
@@ -314,8 +320,4 @@
 
     @include font-resize(16px, 16px);
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }
