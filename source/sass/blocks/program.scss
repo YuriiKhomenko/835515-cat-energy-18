@@ -16,3 +16,24 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .program__heading {
+    margin: 0;
+    margin-bottom: 55px;
+
+    @include font-resize(60px, 60px);
+  }
+
+  .program__title {
+    padding-right: 324px;
+    padding-left: 40px;
+    margin-bottom: 65px;
+
+    @include font-resize(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
