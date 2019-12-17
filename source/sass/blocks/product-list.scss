@@ -37,6 +37,7 @@
 
 .product-list__item--show-all {
   border-bottom: 1px solid $border-light-grey;
+  margin-bottom: 0;
 }
 
 .product-list__item--show-all .product-list__title {
@@ -89,6 +90,10 @@
   .product-list__item-container {
     padding-right: 35px;
     padding-left: 35px;
+  }
+
+  .product-list > li:nth-last-of-type(-n+2) {
+    margin-bottom: 0;
   }
 
   .product-list__item {
@@ -144,6 +149,10 @@
 @media (min-width: $desktop-width) {
   .product-list {
     padding: 0 40px;
+  }
+
+  .product-list > li:nth-last-of-type(-n+2) {
+    margin-bottom: 140px;
   }
 
   .product-list__item {
