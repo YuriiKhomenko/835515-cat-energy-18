@@ -29,7 +29,9 @@
 
 .contact__img {
   display: block;
-  width: 100%;
+  margin: 0 auto;
+  width: 320px;
+  height: 400px;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,6 +56,10 @@
   .contact__city {
     display: block;
     padding-top: 20px;
+  }
+
+  .contact__img {
+    width: 768px;
   }
 }
 
@@ -94,5 +100,9 @@
     padding: 0;
     padding-left: 40px;
     text-align: left;
+  }
+
+  .contact__img {
+    width: 1440px;
   }
 }
