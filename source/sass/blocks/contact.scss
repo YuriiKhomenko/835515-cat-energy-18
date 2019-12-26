@@ -1,6 +1,6 @@
 .contact {
-  background-color: $bg-general-color;
-  padding-top: 30px;
+  padding-top: 28px;
+  background-color: #ffffff;
 }
 
 .contact-catalog {
@@ -21,10 +21,11 @@
 
 .contact__address {
   margin: 0;
-  color: #444444;
+  padding-left: 17px;
 
   @include font-resize(14px, 20px);
   font-family: "Arial", sans-serif;
+  color: #444444;
 }
 
 .contact__img {

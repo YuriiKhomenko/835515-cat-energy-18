@@ -1,8 +1,11 @@
 .advantages {
-  margin-bottom: 35px;
+  margin-bottom: 46px;
 }
 
 .advantages__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   @include font-resize(36px, 60px);
   text-align: left;
 }
@@ -16,7 +19,7 @@
 }
 
 .advantages__item {
-  padding-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .advantages__text {
@@ -28,7 +31,7 @@
 .advantages__text::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -39,8 +42,8 @@
 .advantages__text--leaf::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 4px;
+  left: 5px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/advantage-leaf@1x.png");
@@ -51,8 +54,8 @@
 .advantages__text--water::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 3px;
+  left: 5px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/advantage-powder@1x.png");
@@ -63,8 +66,8 @@
 .advantages__text--cutlery::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 3px;
+  left: 4px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/advantage-dining@1x.png");
@@ -75,8 +78,8 @@
 .advantages__text--clock::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 3px;
+  left: 5px;
   width: 60px;
   height: 60px;
   background-image: url("../../img/advantage-clock@1x.png");
