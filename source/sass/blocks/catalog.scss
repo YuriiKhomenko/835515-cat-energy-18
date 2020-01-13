@@ -1,10 +1,12 @@
 .catalog {
-  margin-bottom: 30px;
+  margin-bottom: 52px;
 }
 
 .catalog__heading {
   @include font-resize(36px, 60px);
   margin: 0;
+  padding-top: 14px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {

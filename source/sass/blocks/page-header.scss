@@ -15,9 +15,16 @@
   height: 18px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.page-header--open {
+  background-image: url("../img/icon-mobile-menu.svg");
+}
+
+.page-header--close {
+  background-image: url("../img/icon-close.svg");
 }
 
 @media (min-width: $tablet-width) {

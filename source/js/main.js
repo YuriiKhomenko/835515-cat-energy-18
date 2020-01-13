@@ -1,4 +1,18 @@
+// Menu
+let button = document.querySelector(".page-header__menu-button");
+let navigation = document.querySelector(".main-nav__list");
 
+button.addEventListener("click", function() {
+  if (button.classList.contains("page-header--open")) {
+    button.classList.remove("page-header--open");
+    button.classList.add("page-header--close");
+    navigation.style.display = "block";
+  } else {
+    button.classList.remove("page-header--close");
+    button.classList.add("page-header--open");
+    navigation.style.display = "none";
+  }
+});
 
 // Slider - mobile
 let imgBefore = document.querySelector(".example__img--before");

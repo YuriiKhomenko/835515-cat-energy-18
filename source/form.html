@@ -14,7 +14,7 @@
         <a class="page-header__logo" href="index.html">
           <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
         </a>
-        <button class="page-header__menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__menu-button page-header--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list main-nav__list--catalog">
@@ -91,12 +91,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--stroke">
+        <fieldset class="form__fieldset form__fieldset--comment form__fieldset--stroke">
           <legend class="form__legend form__legend--comment">Комментарий</legend>
           <textarea class="form__textarea" id="form-comment" name="form-comment" rows="6"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--stroke">
+        <fieldset class="form__fieldset form__fieldset--extra form__fieldset--stroke">
           <legend class="form__legend form__legend--extra">Дополнительно</legend>
           <ul class="form__list form__list--checkboxes">
             <li class="form__item">
@@ -129,7 +129,7 @@
         <div class="contact__inner">
           <b class="contact__slogan">
             приглашаем
-            к сотрудничеству
+            к&nbsp;сотрудничеству
             дилеров!
           </b>
           <p class="contact__address">
@@ -210,5 +210,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

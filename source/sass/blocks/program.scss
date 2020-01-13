@@ -3,8 +3,8 @@
 }
 
 .program__heading {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 
   @include font-resize(36px, 60px);
   color: #111111;
@@ -12,7 +12,7 @@
 
 .program__title {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   padding-right: 45px;
 
   @include font-resize(14px, 18px);

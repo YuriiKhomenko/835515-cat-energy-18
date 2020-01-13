@@ -7,7 +7,7 @@
 .extra::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 14px;
   right: 0;
   left: 20px;
   z-index: -1;
@@ -32,16 +32,20 @@
 
 .extra__list {
   @include clear-list();
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .extra__item:first-child {
   border-top: 1px solid #cdcdcd;
 }
 
+.extra__data {
+  margin-bottom: 16px;
+}
+
 .extra__item {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
 }
@@ -60,7 +64,6 @@
 .extra__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 
   @include font-resize(14px, 14px);
   font-family: "Arial", sans-serif;
@@ -73,13 +76,12 @@
 
 .extra__button {
   margin-bottom: 0;
-
   text-align: center;
+  @include font-resize(16px, 20px);
 }
 
 .extra__promo {
   text-align: center;
-
   background-color: #71b548;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -90,7 +92,7 @@
   position: relative;
 
   margin: 0;
-  padding: 190px 55px 40px;
+  padding: 186px 55px 43px;
 
   @include font-resize(16px, 20px);
   font-family: "Arial", sans-serif;
