@@ -95,6 +95,7 @@
 
   .advantages__heading {
     @include font-resize(60px, 60px);
+    margin-bottom: 65px;
   }
 
   .advantages__list {
@@ -107,8 +108,8 @@
   .advantages__item {
     position: relative;
     width: 354px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+    margin-right: 29px;
+    margin-bottom: 73px;
   }
 
   .advantages__item:nth-child(2n) {
@@ -116,15 +117,24 @@
     margin-right: 0;
   }
 
+  .advantages__item.advantages__item--last {
+    margin-bottom: 53px;
+  }
+
   .advantages__item--leaf::before {
     content: "1";
     position: absolute;
 
     @include font-resize(281.07px, 281.07px);
-    font-family: "Arial", sans-serif;
+    font-family: "Oswald Regular", sans-serif;
     top: -30px;
-    left: 90px;
+    left: 117px;
     color: #f2f2f2;
+  }
+
+  .advantages__text--leaf::after {
+    top: 22px;
+    left: 16px;
   }
 
   .advantages__item--water::before {
@@ -132,10 +142,15 @@
     position: absolute;
 
     @include font-resize(281.07px, 281.07px);
-    font-family: "Arial", sans-serif;
+    font-family: "Oswald Regular", sans-serif;
     top: -30px;
-    left: 90px;
+    left: 117px;
     color: #f2f2f2;
+  }
+
+  .advantages__text--water::after {
+    top: 22px;
+    left: 16px;
   }
 
   .advantages__item--cutlery::before {
@@ -143,10 +158,15 @@
     position: absolute;
 
     @include font-resize(281.07px, 281.07px);
-    font-family: "Arial", sans-serif;
+    font-family: "Oswald Regular", sans-serif;
     top: -30px;
-    left: 90px;
+    left: 117px;
     color: #f2f2f2;
+  }
+
+  .advantages__text--cutlery::after {
+    top: 22px;
+    left: 16px;
   }
 
   .advantages__item--clock::before {
@@ -154,10 +174,15 @@
     position: absolute;
 
     @include font-resize(281.07px, 281.07px);
-    font-family: "Arial", sans-serif;
+    font-family: "Oswald Regular", sans-serif;
     top: -30px;
-    left: 90px;
+    left: 117px;
     color: #f2f2f2;
+  }
+
+  .advantages__text--clock::after {
+    top: 22px;
+    left: 16px;
   }
 
   .advantages__text {
@@ -172,6 +197,7 @@
   }
 
   .advantages__text::before {
+    top: 6px;
     width: 80px;
     height: 80px;
   }

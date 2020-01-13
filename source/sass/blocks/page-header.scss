@@ -40,17 +40,13 @@
   .page-header {
     border: none;
   }
-}
 
-@media (min-width: $tablet-width) {
   .page-header {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
   }
 
   .page-header__top {
-    padding-top: 15px;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
   }
 }
 

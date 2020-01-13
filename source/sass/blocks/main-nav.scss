@@ -27,7 +27,8 @@
 
   .main-nav__link {
     border: none;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 8px;
 
     @include font("Regular");
     @include font-resize(18px, 24.85px);

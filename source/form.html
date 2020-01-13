@@ -12,7 +12,11 @@
     <div class="page-header__wrapper container">
       <div class="page-header__top">
         <a class="page-header__logo" href="index.html">
-          <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          </picture>
         </a>
         <button class="page-header__menu-button page-header--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>

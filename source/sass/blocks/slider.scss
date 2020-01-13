@@ -20,3 +20,31 @@
   background-color: #68b738;
   border-radius: 6px;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-top: 8px;
+  }
+
+  .slider__switch,
+  .slider__switch-thumb {
+    display: none;
+  }
+
+  .slider__range-bar {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+  }
+
+  .slider__range-thumb {
+    position: absolute;
+    top: -15px;
+    left: 200px;
+    width: 42px;
+    height: 42px;
+    background-image: url('../img/slider-thumb.png');
+  }
+}

@@ -112,64 +112,76 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programms {
+    margin-top: -55px;
+  }
+
   .programms__item {
     margin-bottom: 30px;
-    padding: 0 50px;
-    padding-top: 80px;
+    padding: 0 52px;
+    padding-top: 76px;
+    padding-bottom: 48px;
   }
 
   .programms__title {
     @include font-resize(36px, 37.02px);
     padding-left: 0;
+    margin-bottom: 23px;
   }
 
   .programms__title--slim::before {
-    left: 420px;
-    top: 0;
+    left: 423px;
+    top: 2px;
     width: 140px;
     height: 194px;
   }
 
   .programms__title--slim::after {
-    left: 430px;
-    top: 0;
+    left: 395px;
+    top: 15px;
     width: 200px;
     height: 200px;
   }
 
   .programms__title--pro::before {
-    left: 420px;
-    top: 0;
+    left: 360px;
+    top: 58px;
     width: 268px;
     height: 112px;
   }
 
   .programms__title--pro::after {
-    left: 430px;
-    top: 0;
+    left: 397px;
+    top: 15px;
     width: 200px;
     height: 200px;
   }
 
   .programms__text {
     @include font-resize(16px, 24px);
-    padding-right: 235px;
+    padding-right: 230px;
+    margin-bottom: 15px;
     border: none;
   }
 
   .programms__text--pro {
-    padding-right: 265px;
+    padding-right: 260px;
   }
 
   .programms__link {
     @include font-resize(20px, 20px);
-    padding: 55px 0;
     padding-right: 35px;
+    padding-bottom: 15px;
   }
 
   .programms__link::before {
-    left: 130px;
-    top: 60px;
+    left: 132px;
+    top: 25px;
+  }
+
+  .programms__link--pro::before {
+    left: 127px;
+    top: 26px;
   }
 }
 

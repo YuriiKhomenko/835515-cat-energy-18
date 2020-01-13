@@ -83,7 +83,7 @@
 .example__img {
   position: absolute;
   top: 0;
-  left: -20px;
+  left: -10px;
   width: 320px;
   max-width: none;
   height: 240px;
@@ -114,7 +114,8 @@
 
   .example__heading {
     @include font-resize(60px, 60px);
-    margin-bottom: 70px;
+    margin-bottom: 66px;
+    padding-top: 42px;
   }
 
   .example__text {
@@ -148,31 +149,60 @@
 
   .example__cost {
     @include font-resize(20px, 20px);
+    padding-top: 7px;
     text-align: right;
     width: 192px;
   }
 
-  .example__slider {
-    background-color: #f2f2f2;
-    padding-bottom: 65px;
+  .example__price {
+    display: block;
+    padding-top: 9px;
   }
 
-  .example__slider {
+  .example__gallery {
     @include font-resize(20px, 20px);
+    position: relative;
+    margin-bottom: 68px;
   }
 
-  .example__prog-bar {
-    width: 444px;
+  .example__images {
+    width: 690px;
+    height: 517px;
+    margin-bottom: 39px;
+  }
+
+  .example__img {
+    top: 10px;
+    left: 3px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .example__img--after {
+    display: block;
+  }
+
+  .example__controls {
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 708px;
   }
 
   .example__before {
-    padding-bottom: 7px;
-    border-bottom: 1px dashed #bebebe;
+    @include font-resize(20px, 20px);
+    padding: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
   }
 
   .example__after {
-    padding-bottom: 7px;
-    border-bottom: 1px dashed #bebebe;
+    @include font-resize(20px, 20px);
+    padding: 0;
+    padding-bottom: 6px;
+    margin-left: 24px;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 

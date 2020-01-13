@@ -12,7 +12,11 @@
     <div class="page-header__wrapper container">
       <div class="page-header__top">
         <a class="page-header__logo" href="#">
-          <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          </picture>
         </a>
         <button class="page-header__menu-button page-header--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -39,8 +43,11 @@
           <h2 class="intro__heading">Функциональное питание для&nbsp;котов</h2>
           <b class="intro__slogan">Занялся собой? Займись котом!</b>
           <a class="intro__link button" href="form.html">Подобрать программу</a>
-          <img class="intro__img" width="280" height="271" src="img/index-can-mobile@1x.png"
-            alt="Продукт Cat Energy Pro с курицей">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="intro__img" src="img/index-can-mobile@1x.png" alt="Продукт Cat Energy Pro с курицей">
+          </picture>
         </div>
       </div>
       <div class="container">
@@ -51,7 +58,7 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy
               Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programms__link" href="#">Каталог Slim</a>
+            <a class="programms__link programms__link--slim" href="#">Каталог Slim</a>
           </li>
           <li class="programms__item">
             <b class="programms__title programms__title--pro">Набор массы</b>
@@ -59,7 +66,7 @@
               Заработать авторитет среди дворовых котов и&nbsp;даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programms__link" href="#">Каталог Pro</a>
+            <a class="programms__link programms__link--pro" href="#">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -78,12 +85,12 @@
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="advantages__item advantages__item--cutlery">
+          <li class="advantages__item advantages__item--last advantages__item--cutlery">
             <p class="advantages__text advantages__text--cutlery">
               Замените один&#8209;два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="advantages__item advantages__item--clock">
+          <li class="advantages__item advantages__item--last advantages__item--clock">
             <p class="advantages__text advantages__text--clock">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
@@ -113,10 +120,18 @@
             <p class="example__cost">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
           </div>
         </div>
-        <div class="example__slider">
+        <div class="example__gallery">
           <div class="example__images">
-            <img class="example__img example__img--before" width="320" height="240" src="img/before-mobile@1x.png" alt="Толстый кот Борис">
-            <img class="example__img example__img--after" width="320" height="240" src="img/after-mobile@1x.png" alt="Похудевший кот Борис">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+              <img class="example__img example__img--before" width="320" height="240" src="img/before-mobile@1x.png" alt="Толстый кот Борис">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+              <img class="example__img example__img--after" width="320" height="240" src="img/after-mobile@1x.png" alt="Похудевший кот Борис">
+            </picture>
           </div>
           <div class="example__controls">
             <span class="example__before">Было</span>
