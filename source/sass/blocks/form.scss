@@ -67,6 +67,7 @@
   appearance: none;
   border: 1px solid #cecece;
   border-radius: 50%;
+  cursor: pointer;
 
   &:checked::before {
     position: absolute;
@@ -403,6 +404,33 @@
     margin-bottom: 52px;
   }
 
+  .form__input--main:hover,
+  .form__input--email:hover,
+  .form__input--tel:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  .form__input--main:active,
+  .form__input--email:active,
+  .form__input--tel:active {
+    border: 2px solid #444444;
+  }
+
+  .form__input--main:invalid,
+  .form__input--email:invalid,
+  .form__input--tel:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  .form__input--radio:hover {
+    border: 1px solid #bcbcbc;
+  }
+
+  .form__input--radio:active,
+  .form__input--radio:active + .form__label {
+    opacity: 0.3;
+  }
+
   .form__list--radio .form__item {
     margin-bottom: 14px;
   }
@@ -416,6 +444,10 @@
 
   .form__list--contacts .form__item {
     width: 570px;
+  }
+
+  .form__input--email:hover .form__label--email {
+    background-image: url("../img/icon-mail-green.svg");
   }
 
   .form__legend--extra {
@@ -438,6 +470,14 @@
 
   .form__list--checkboxes .form__item:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .form__input--checkbox:hover {
+    border: 1px solid #bababa;
+  }
+
+  .form__input--checkbox:active + .form__label {
+    opacity: 0.3;
   }
 
   .form-wrapper {

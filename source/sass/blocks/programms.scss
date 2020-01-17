@@ -241,4 +241,15 @@
   .programms__item:last-child {
     margin-bottom: 30px;
   }
+
+  .programms__link:hover::before {
+    width: 33px;
+    height: 11px;
+    background-image: url('../img/icon-right-arrow-verylong.svg');
+  }
+
+  .programms__link:active,
+  .programms__link:active::before {
+    opacity: 0.3;
+  }
 }

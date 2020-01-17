@@ -2,10 +2,20 @@
   display: block;
   padding: 10px 0;
   margin-bottom: 25px;
-  background-color: $bg-green-color;
+  background-color: #68b738;
 
   @include font-resize(14px, 18px);
   color: $text-white-color;
   text-transform: uppercase;
   border: none;
+}
+
+@media (min-width: $desktop-width) {
+  .button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba($color: #ffffff, $alpha: 0.3)
+}
 }

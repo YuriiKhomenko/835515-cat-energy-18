@@ -213,6 +213,15 @@
     width: 169px;
   }
 
+  .product-list__item--show-all .product-list__button:hover {
+    background-color: #ebebeb;
+  }
+
+  .product-list__item--show-all .product-list__button:active {
+    background-color: #ebebeb;
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
+
   .product-list__item--show-all .product-list__title::before {
     top: 56px;
   }
