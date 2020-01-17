@@ -12,10 +12,10 @@
 
 @media (min-width: $desktop-width) {
   .button:hover {
-  background-color: #5eaa2f;
-}
+    background-color: #5eaa2f;
+  }
 
-.button:active {
-  color: rgba($color: #ffffff, $alpha: 0.3)
-}
+  .button:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }

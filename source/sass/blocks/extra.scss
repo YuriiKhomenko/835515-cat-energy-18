@@ -77,6 +77,7 @@
 .extra__button {
   margin-bottom: 0;
   text-align: center;
+
   @include font-resize(16px, 20px);
 }
 
@@ -127,6 +128,7 @@
   .extra__heading {
     margin-bottom: 80px;
     width: 410px;
+
     @include font-resize(36px, 36px);
     text-align: center;
   }
