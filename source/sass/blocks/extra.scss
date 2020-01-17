@@ -205,6 +205,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 85px;
+  }
+
   .extra__main {
     display: flex;
     justify-content: space-between;
@@ -212,8 +216,7 @@
 
   .extra__heading {
     margin-left: -40px;
-    margin-bottom: 80px;
-
+    margin-bottom: 79px;
     width: 415px;
   }
 
@@ -228,8 +231,8 @@
   }
 
   .extra__item {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -268,11 +271,12 @@
   }
 
   .extra__text {
-    padding: 190px 40px 45px;
+    padding: 188px 40px 40px;
     text-align: center;
   }
 
   .extra__text::before {
-    top: 40%;
+    top: 95px;
+    left: 97px;
   }
 }

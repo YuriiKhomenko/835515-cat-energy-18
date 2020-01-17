@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--custom">
     <div class="page-header__wrapper container">
       <div class="page-header__top">
         <a class="page-header__logo" href="index.html">
@@ -166,7 +166,7 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
               <picture>
@@ -197,7 +197,7 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
               <picture>
@@ -228,7 +228,7 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
               <picture>
@@ -258,7 +258,7 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item product-list__item--show-all">
+        <li class="product-list__item product-list__item--show-all product-list__item--last">
           <div class="product-list__item-container">
             <h3 class="product-list__title">Показать еще 100500 товаров</h3>
             <p class="product-list__text">На самом деле вкусов гораздо больше!</p>
@@ -342,8 +342,12 @@
           </p>
         </div>
       </div>
-      <img class="contact__img" width="320" height="400" src="img/bg-map-mobile@1x.png"
-        alt="Карта проезда к Cat Energy: : г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img class="contact__img" width="320" height="400" src="img/bg-map-mobile@1x.png"
+          alt="Карта проезда к Cat Energy: : г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </picture>
     </section>
   </main>
   <footer class="page-footer">

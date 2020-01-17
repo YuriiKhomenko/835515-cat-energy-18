@@ -41,12 +41,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item:first-child {
-    padding-left: 130px;
+    padding-left: 133px;
+  }
+
+  .main-nav__item {
+    padding-left: 33px;
   }
 
   .main-nav__link {
     @include font-resize(20px, 24.85px);
     color: #ffffff;
+    padding-top: 17px;
   }
 
   .main-nav__link--active {

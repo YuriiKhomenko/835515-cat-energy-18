@@ -400,26 +400,40 @@
 
   .form-info .form__fieldset {
     width: 570px;
+    margin-bottom: 52px;
+  }
+
+  .form__list--radio .form__item {
+    margin-bottom: 14px;
   }
 
   .form__list--contacts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 41px;
   }
 
   .form__list--contacts .form__item {
     width: 570px;
   }
 
+  .form__legend--extra {
+    margin-bottom: 59px;
+  }
+
   .form__list--checkboxes {
-    margin-bottom: 60px;
+    margin-bottom: 31px;
   }
 
   .form__list--checkboxes .form__item {
     margin-right: 80px;
     margin-bottom: 0;
     width: 245px;
+  }
+
+  .form__list--checkboxes .form__item:nth-child(odd) {
+    margin-right: 80px;
   }
 
   .form__list--checkboxes .form__item:nth-child(4n) {

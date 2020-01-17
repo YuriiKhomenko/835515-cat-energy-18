@@ -194,18 +194,18 @@
   .programms__item {
     width: 570px;
     padding-top: 0;
-    padding-left: 50px;
+    padding-left: 54px;
     padding-right: 0;
   }
 
   .programms__title {
-    padding-top: 80px;
-    padding-left: 170px;
-    margin-bottom: 75px;
+    padding-top: 77px;
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   .programms__title--slim::before {
-    left: 0;
+    left: 14px;
     top: 40px;
     width: 70px;
     height: 97px;
@@ -213,26 +213,32 @@
 
   .programms__title--slim::after {
     left: 0;
-    top: 40px;
+    top: 47px;
     width: 100px;
     height: 100px;
   }
 
   .programms__title--pro::before {
-    left: 0;
-    top: 40px;
+    left: -18px;
+    top: 69px;
     width: 134px;
     height: 56px;
   }
 
   .programms__title--pro::after {
     left: 0;
-    top: 40px;
+    top: 47px;
     width: 100px;
     height: 100px;
   }
 
   .programms__text {
     padding-right: 50px;
+    padding-bottom: 0;
+    margin-bottom: 11px;
+  }
+
+  .programms__item:last-child {
+    margin-bottom: 30px;
   }
 }

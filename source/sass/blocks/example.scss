@@ -226,13 +226,24 @@
 
   .example__heading {
     background-color: #ffffff;
-    margin-top: -150px;
-    margin-bottom: 150px;
+    margin-top: -175px;
+    margin-bottom: 145px;
   }
 
   .example__text {
     margin-bottom: 70px;
-    padding-right: 180px;
+    padding-right: 80px;
+  }
+
+  .example__images {
+    margin-top: -200px;
+    margin-right: -40px;
+    margin-bottom: 52px;
+  }
+
+  .example__controls {
+    padding-right: 0;
+    padding-left: 140px;
   }
 
   .example__data {
@@ -248,10 +259,17 @@
   }
 
   .example__cost {
+    display: flex;
+    padding-top: 29px;
     width: 330px;
   }
 
   .example__price {
-    padding-left: 60px;
+    padding-top: 0px;
+    padding-left: 66px;
+  }
+
+  .example__gallery {
+    margin-bottom: 30px;
   }
 }

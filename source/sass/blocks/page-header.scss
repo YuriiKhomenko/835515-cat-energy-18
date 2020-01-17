@@ -52,6 +52,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 108px;
+  }
+
+  .page-header--custom {
+    margin-bottom: 73px;
+  }
+
   .page-header__top {
     padding-top: 50px;
     width: 50%;
