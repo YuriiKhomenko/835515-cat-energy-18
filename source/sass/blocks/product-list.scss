@@ -76,7 +76,6 @@
   color: $text-dark-grey-color;
   text-transform: uppercase;
   background-color: $bg-light-grey;
-  display: block;
   width: 100%;
   padding: 10px 0;
   cursor: pointer;
@@ -91,8 +90,7 @@
   }
 
   .product-list__item-container {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding: 0;
   }
 
   .product-list > li:nth-last-of-type(-n+2) {
@@ -102,7 +100,7 @@
   .product-list__item {
     border: none;
     flex-direction: column;
-    margin-bottom: 140px;
+    margin-bottom: 137px;
     width: 324px;
     background-color: #f2f2f2;
   }
@@ -111,19 +109,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
+  }
+
+  .product-list__img--small {
+    margin-top: -45px;
+  }
+
+  .product-list__img--big {
+    margin-top: -81px;
+  }
+
+  .product-list__info {
+    padding-right: 36px;
+    padding-left: 37px;
   }
 
   .product-list__title {
     @include font-resize(20px, 20px);
     text-align: center;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 35px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 22px;
   }
 
   .product-list__link {
     @include font-resize(16px, 20px);
+    margin-right: 38px;
     margin-bottom: 40px;
+    margin-left: 38px;
   }
 
   .product-list__item--show-all {
@@ -132,20 +147,28 @@
   }
 
   .product-list__item--show-all .product-list__title {
-    margin-bottom: 30px;
-    padding-top: 160px;
-    padding-right: 50px;
-    padding-left: 50px;
+    margin-bottom: 27px;
+    padding-top: 166px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 
   .product-list__item--show-all .product-list__text {
     @include font-resize(16px, 16px);
-    margin-bottom: 80px;
-    padding: 0 30px;
+    margin-bottom: 89px;
+    padding: 0 50px;
   }
 
   .product-list__item--show-all .product-list__title::before {
-    top: 70px;
+    top: 57px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-list__item--show-all .product-list__button {
+    margin-right: 18px;
+    margin-left: 18px;
+    width: 248px;
   }
 }
 

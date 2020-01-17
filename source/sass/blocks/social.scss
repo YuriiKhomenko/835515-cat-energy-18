@@ -20,12 +20,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
-    width: 324px;
+  .social {
     border: none;
   }
 
-  .social__link {
+  .social__list {
     padding: 0;
+    width: 324px;
+    border: none;
+    justify-content: center;
   }
 }
