@@ -3,16 +3,23 @@
 }
 
 .programms__item {
-  padding: 20px 20px;
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 21px;
   margin-bottom: 20px;
   text-align: left;
   background-color: $bg-light-grey;
 }
 
+.programms__item:last-child {
+  margin-bottom: 0;
+}
+
 .programms__title {
   position: relative;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 29px;
   padding-left: 70px;
 
   @include font-resize(24px, 37.02px);
@@ -22,8 +29,8 @@
 .programms__title--slim::before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 0;
+  left: 9px;
+  top: -7px;
   width: 35px;
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
@@ -34,8 +41,8 @@
 .programms__title--slim::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: -6px;
   width: 50px;
   height: 51px;
   background-color: $bg-green-color;
@@ -43,11 +50,15 @@
   z-index: 0;
 }
 
+.programms__title--pro {
+  margin-bottom: 30px;
+}
+
 .programms__title--pro::before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 0;
+  left: -8px;
+  top: 7px;
   width: 67px;
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
@@ -58,8 +69,8 @@
 .programms__title--pro::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: -4px;
   width: 50px;
   height: 51px;
   background-color: $bg-green-color;
@@ -69,7 +80,7 @@
 
 .programms__text {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   font-family: "Arial", sans-serif;
 
   @include font-resize(14px, 18px);
@@ -81,7 +92,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-right: 35px;
 
   @include font-resize(16px, 16px);
@@ -92,8 +103,8 @@
 .programms__link::before {
   content: "";
   position: absolute;
-  top: 25px;
-  right: 0;
+  top: 22px;
+  right: 1px;
   width: 24px;
   height: 11px;
   background-image: url("../img/icon-right-arrow-long.svg");
@@ -101,64 +112,76 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programms {
+    margin-top: -55px;
+  }
+
   .programms__item {
     margin-bottom: 30px;
-    padding: 0 50px;
-    padding-top: 80px;
+    padding: 0 52px;
+    padding-top: 76px;
+    padding-bottom: 48px;
   }
 
   .programms__title {
     @include font-resize(36px, 37.02px);
     padding-left: 0;
+    margin-bottom: 23px;
   }
 
   .programms__title--slim::before {
-    left: 420px;
-    top: 0;
+    left: 423px;
+    top: 2px;
     width: 140px;
     height: 194px;
   }
 
   .programms__title--slim::after {
-    left: 430px;
-    top: 0;
+    left: 395px;
+    top: 15px;
     width: 200px;
     height: 200px;
   }
 
   .programms__title--pro::before {
-    left: 420px;
-    top: 0;
+    left: 360px;
+    top: 58px;
     width: 268px;
     height: 112px;
   }
 
   .programms__title--pro::after {
-    left: 430px;
-    top: 0;
+    left: 397px;
+    top: 15px;
     width: 200px;
     height: 200px;
   }
 
   .programms__text {
     @include font-resize(16px, 24px);
-    padding-right: 235px;
+    padding-right: 230px;
+    margin-bottom: 15px;
     border: none;
   }
 
   .programms__text--pro {
-    padding-right: 265px;
+    padding-right: 260px;
   }
 
   .programms__link {
     @include font-resize(20px, 20px);
-    padding: 55px 0;
     padding-right: 35px;
+    padding-bottom: 15px;
   }
 
   .programms__link::before {
-    left: 130px;
-    top: 60px;
+    left: 132px;
+    top: 25px;
+  }
+
+  .programms__link--pro::before {
+    left: 127px;
+    top: 26px;
   }
 }
 
@@ -171,18 +194,18 @@
   .programms__item {
     width: 570px;
     padding-top: 0;
-    padding-left: 50px;
+    padding-left: 54px;
     padding-right: 0;
   }
 
   .programms__title {
-    padding-top: 80px;
-    padding-left: 170px;
-    margin-bottom: 75px;
+    padding-top: 77px;
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   .programms__title--slim::before {
-    left: 0;
+    left: 14px;
     top: 40px;
     width: 70px;
     height: 97px;
@@ -190,26 +213,43 @@
 
   .programms__title--slim::after {
     left: 0;
-    top: 40px;
+    top: 47px;
     width: 100px;
     height: 100px;
   }
 
   .programms__title--pro::before {
-    left: 0;
-    top: 40px;
+    left: -18px;
+    top: 69px;
     width: 134px;
     height: 56px;
   }
 
   .programms__title--pro::after {
     left: 0;
-    top: 40px;
+    top: 47px;
     width: 100px;
     height: 100px;
   }
 
   .programms__text {
     padding-right: 50px;
+    padding-bottom: 0;
+    margin-bottom: 11px;
+  }
+
+  .programms__item:last-child {
+    margin-bottom: 30px;
+  }
+
+  .programms__link:hover::before {
+    width: 33px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  .programms__link:active,
+  .programms__link:active::before {
+    opacity: 0.3;
   }
 }

@@ -4,9 +4,7 @@
 }
 
 .product-list__item {
-  margin-bottom: 25px;
   border-top: 1px solid $border-light-grey;
-  min-height: 210px;
 }
 
 .product-list__item-container {
@@ -16,7 +14,7 @@
 
 .product-list__wrapper {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   justify-content: space-between;
 }
 
@@ -30,9 +28,14 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   padding-top: 20px;
   padding-right: 40px;
+}
+
+.product-list__link {
+  @include font-resize(16px, 20px);
+  margin-bottom: 23px;
 }
 
 .product-list__item--show-all {
@@ -45,7 +48,7 @@
   text-align: center;
   padding: 0;
   padding-top: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .product-list__item--show-all .product-list__title::before {
@@ -63,7 +66,7 @@
 .product-list__item--show-all .product-list__text {
   @include font-resize(12px, 16px);
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
 }
 
@@ -73,7 +76,6 @@
   color: $text-dark-grey-color;
   text-transform: uppercase;
   background-color: $bg-light-grey;
-  display: block;
   width: 100%;
   padding: 10px 0;
   cursor: pointer;
@@ -88,8 +90,7 @@
   }
 
   .product-list__item-container {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding: 0;
   }
 
   .product-list > li:nth-last-of-type(-n+2) {
@@ -99,7 +100,7 @@
   .product-list__item {
     border: none;
     flex-direction: column;
-    margin-bottom: 140px;
+    margin-bottom: 137px;
     width: 324px;
     background-color: #f2f2f2;
   }
@@ -108,19 +109,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
+  }
+
+  .product-list__img--small {
+    margin-top: -45px;
+  }
+
+  .product-list__img--big {
+    margin-top: -81px;
+  }
+
+  .product-list__info {
+    padding-right: 36px;
+    padding-left: 37px;
   }
 
   .product-list__title {
     @include font-resize(20px, 20px);
     text-align: center;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 35px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 22px;
   }
 
   .product-list__link {
     @include font-resize(16px, 20px);
+    margin-right: 38px;
     margin-bottom: 40px;
+    margin-left: 38px;
   }
 
   .product-list__item--show-all {
@@ -129,20 +147,28 @@
   }
 
   .product-list__item--show-all .product-list__title {
-    margin-bottom: 30px;
-    padding-top: 160px;
-    padding-right: 50px;
-    padding-left: 50px;
+    margin-bottom: 27px;
+    padding-top: 166px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 
   .product-list__item--show-all .product-list__text {
     @include font-resize(16px, 16px);
-    margin-bottom: 80px;
-    padding: 0 30px;
+    margin-bottom: 89px;
+    padding: 0 50px;
   }
 
   .product-list__item--show-all .product-list__title::before {
-    top: 70px;
+    top: 57px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-list__item--show-all .product-list__button {
+    margin-right: 18px;
+    margin-left: 18px;
+    width: 248px;
   }
 }
 
@@ -164,24 +190,44 @@
   }
 
   .product-list__title {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
     padding-right: 20px;
     padding-left: 20px;
   }
 
   .product-list__item--show-all .product-list__title {
-    margin-bottom: 25px;
-    padding-top: 160px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-bottom: 2/px;
+    padding-top: 166px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   .product-list__item--show-all .product-list__text {
-    margin-bottom: 80px;
+    margin-bottom: 89px;
     padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .product-list__item--show-all .product-list__button {
+    width: 169px;
+  }
+
+  .product-list__item--show-all .product-list__button:hover {
+    background-color: #ebebeb;
+  }
+
+  .product-list__item--show-all .product-list__button:active {
+    background-color: #ebebeb;
+    color: rgba($color: #000000, $alpha: 0.3);
   }
 
   .product-list__item--show-all .product-list__title::before {
-    top: 70px;
+    top: 56px;
+  }
+
+  .product-list__item--last,
+  .product-list > li:nth-last-of-type(-n+2) {
+    margin-bottom: 10px;
   }
 }

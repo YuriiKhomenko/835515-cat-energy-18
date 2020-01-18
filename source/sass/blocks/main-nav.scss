@@ -14,6 +14,7 @@
   color: $text-general-color;
   padding: 24px 0;
   border-top: 1px solid $border-dark-grey;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,7 +28,8 @@
 
   .main-nav__link {
     border: none;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 8px;
 
     @include font("Regular");
     @include font-resize(18px, 24.85px);
@@ -39,13 +41,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__link:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__link:active {
+    opacity: 0.3;
+  }
+
   .main-nav__item:first-child {
-    padding-left: 130px;
+    padding-left: 133px;
+  }
+
+  .main-nav__item {
+    padding-left: 33px;
   }
 
   .main-nav__link {
     @include font-resize(20px, 24.85px);
     color: #ffffff;
+    padding-top: 17px;
   }
 
   .main-nav__link--active {

@@ -3,8 +3,8 @@
 }
 
 .program__heading {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 
   @include font-resize(36px, 60px);
   color: #111111;
@@ -12,7 +12,7 @@
 
 .program__title {
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   padding-right: 45px;
 
   @include font-resize(14px, 18px);
@@ -32,7 +32,7 @@
   .program__title {
     padding-right: 324px;
     padding-left: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
 
     @include font-resize(20px, 30px);
   }
@@ -42,5 +42,6 @@
   .program__title {
     padding-right: 895px;
     padding-left: 0;
+    margin-bottom: 65px;
   }
 }

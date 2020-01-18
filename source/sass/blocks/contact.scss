@@ -1,6 +1,6 @@
 .contact {
-  background-color: $bg-general-color;
-  padding-top: 30px;
+  padding-top: 28px;
+  background-color: #ffffff;
 }
 
 .contact-catalog {
@@ -21,23 +21,29 @@
 
 .contact__address {
   margin: 0;
-  color: #444444;
+  padding-left: 17px;
 
   @include font-resize(14px, 20px);
   font-family: "Arial", sans-serif;
+  color: #444444;
 }
 
 .contact__img {
   display: block;
   margin: 0 auto;
+  object-fit: cover;
   width: 320px;
-  height: 400px;
+  height: 363px;
 }
 
 @media (min-width: $tablet-width) {
   .contact__inner {
     padding: 0 40px;
     margin-bottom: 60px;
+  }
+
+  .contact-catalog {
+    padding-top: 63px;
   }
 
   .contact__slogan {
@@ -60,6 +66,7 @@
 
   .contact__img {
     width: 768px;
+    height: 400px;
   }
 }
 
@@ -76,6 +83,7 @@
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 79px;
   }
 
   .contact-wrapper {
@@ -98,7 +106,8 @@
 
   .contact__address {
     padding: 0;
-    padding-left: 40px;
+    padding-left: 22px;
+    padding-right: 10px;
     text-align: left;
   }
 

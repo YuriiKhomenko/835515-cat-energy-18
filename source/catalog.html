@@ -8,13 +8,17 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--custom">
     <div class="page-header__wrapper container">
       <div class="page-header__top">
         <a class="page-header__logo" href="index.html">
-          <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="" width="191" height="38" src="img/logo-mobile.svg" alt="Лого Cat Energy">
+          </picture>
         </a>
-        <button class="page-header__menu-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__menu-button page-header--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list main-nav__list--catalog">
@@ -41,9 +45,12 @@
         <li class="product-list__item">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/chicken-small-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 500 г с курицей">
-              <div class="product-list__info">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--small" src="img/chicken-small-mobile@1x.jpg" alt="Баночка Cat Energy Pro 500 г с курицей">
+              </picture>
+                <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Pro 500 г</h3>
                 <table class="product-list__table product-table">
                   <tbody>
@@ -69,8 +76,11 @@
         <li class="product-list__item">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/chicken-big-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 1000 г с курицей">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--big" src="img/chicken-big-mobile@1x.jpg" alt="Баночка Cat Energy Pro 1000 г с курицей">
+              </picture>
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Pro 1000 г</h3>
                 <table class="product-list__table product-table">
@@ -97,8 +107,11 @@
         <li class="product-list__item">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/fish-small-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 500 г с рыбой">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--small" src="img/fish-small-mobile@1x.jpg" alt="Баночка Cat Energy Pro 500 г с рыбой">
+              </picture>
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Pro 500 г</h3>
                 <table class="product-list__table product-table">
@@ -125,8 +138,11 @@
         <li class="product-list__item">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/fish-big-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 1000 г с рыбой">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--big" src="img/fish-big-mobile@1x.jpg" alt="Баночка Cat Energy Pro 1000 г с рыбой">
+              </picture>
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Pro 1000 г</h3>
                 <table class="product-list__table product-table">
@@ -150,11 +166,14 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/buckwheat-small-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 500 г с гречкой">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--small" src="img/buckwheat-small-mobile@1x.jpg" alt="Баночка Cat Energy Pro 500 г с гречкой">
+              </picture>
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Slim 500 г</h3>
                 <table class="product-list__table product-table">
@@ -178,11 +197,14 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/buckwheat-big-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 1000 г с гречкой">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--big" src="img/buckwheat-big-mobile@1x.jpg" alt="Баночка Cat Energy Pro 1000 г с гречкой">
+              </picture>
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Slim 1000 г</h3>
                 <table class="product-list__table product-table">
@@ -206,11 +228,13 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item product-list__item--last">
           <div class="product-list__item-container">
             <div class="product-list__wrapper">
-              <img class="product-list__img" width="140" height="144" src="img/rice-small-mobile@1x.jpg"
-                alt="Баночка Cat Energy Pro 500 г с рисом">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x">
+                <img class="product-list__img product-list__img--small" src="img/rice-small-mobile@1x.jpg" alt="Баночка Cat Energy Pro 500 г с рисом">
               <div class="product-list__info">
                 <h3 class="product-list__title">Cat Energy Slim 500 г</h3>
                 <table class="product-list__table product-table">
@@ -234,7 +258,7 @@
             <a class="product-list__link button" href="#">Заказать</a>
           </div>
         </li>
-        <li class="product-list__item product-list__item--show-all">
+        <li class="product-list__item product-list__item--show-all product-list__item--last">
           <div class="product-list__item-container">
             <h3 class="product-list__title">Показать еще 100500 товаров</h3>
             <p class="product-list__text">На самом деле вкусов гораздо больше!</p>
@@ -298,7 +322,7 @@
             </li>
           </ul>
           <div class="extra__promo">
-            <p class="extra__text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="extra__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -309,7 +333,7 @@
         <div class="contact__inner">
           <b class="contact__slogan">
             приглашаем
-            к сотрудничеству
+            к&nbsp;сотрудничеству
             дилеров!
           </b>
           <p class="contact__address">
@@ -318,8 +342,12 @@
           </p>
         </div>
       </div>
-      <img class="contact__img" width="320" height="400" src="img/bg-map-mobile@1x.png"
-        alt="Карта проезда к Cat Energy: : г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img class="contact__img" width="320" height="400" src="img/bg-map-mobile@1x.png"
+          alt="Карта проезда к Cat Energy: : г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </picture>
     </section>
   </main>
   <footer class="page-footer">
@@ -390,6 +418,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

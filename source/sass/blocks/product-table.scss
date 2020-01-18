@@ -1,6 +1,7 @@
 .product-table {
   @include font-resize(12px, 16px);
   font-family: "Arial", sans-serif;
+  border-collapse: collapse;
 }
 
 .product-table__data:nth-child(1n) {
@@ -14,7 +15,7 @@
 @media (min-width: $tablet-width) {
   .product-table {
     @include font-resize(16px, 16px);
-    border-collapse: collapse;
+    height: 92px;
   }
 
   .product-table__data {

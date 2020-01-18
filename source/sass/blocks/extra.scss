@@ -7,7 +7,7 @@
 .extra::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 14px;
   right: 0;
   left: 20px;
   z-index: -1;
@@ -32,16 +32,20 @@
 
 .extra__list {
   @include clear-list();
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .extra__item:first-child {
   border-top: 1px solid #cdcdcd;
 }
 
+.extra__data {
+  margin-bottom: 16px;
+}
+
 .extra__item {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
 }
@@ -60,7 +64,6 @@
 .extra__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 
   @include font-resize(14px, 14px);
   font-family: "Arial", sans-serif;
@@ -73,13 +76,13 @@
 
 .extra__button {
   margin-bottom: 0;
-
   text-align: center;
+
+  @include font-resize(16px, 20px);
 }
 
 .extra__promo {
   text-align: center;
-
   background-color: #71b548;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -90,7 +93,7 @@
   position: relative;
 
   margin: 0;
-  padding: 190px 55px 40px;
+  padding: 186px 55px 43px;
 
   @include font-resize(16px, 20px);
   font-family: "Arial", sans-serif;
@@ -114,16 +117,16 @@
 
 @media (min-width: $tablet-width) {
   .extra {
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   .extra::before {
     left: 0;
+    top: 22px;
   }
 
   .extra__heading {
-    margin-bottom: 75px;
-
+    margin-bottom: 80px;
     width: 410px;
 
     @include font-resize(36px, 36px);
@@ -131,13 +134,14 @@
   }
 
   .extra__list {
+    margin-bottom: 69px;
     border-right: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
   }
 
   .extra__item-wrapper {
     padding-right: 35px;
-    padding-left: 35px;
+    padding-left: 38px;
   }
 
   .extra__item:first-child {
@@ -146,7 +150,7 @@
 
   .extra__item {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
 
     border-bottom: 1px solid #e6e6e6;
   }
@@ -155,7 +159,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .extra__title {
@@ -165,7 +169,7 @@
   }
 
   .extra__info {
-    margin: 0;
+    margin-top: 4px;
 
     @include font-resize(16px, 20px);
   }
@@ -186,23 +190,27 @@
   }
 
   .extra__text {
-    padding-top: 75px;
-    padding-right: 125px;
-    padding-bottom: 70px;
+    padding-top: 72px;
+    padding-right: 115px;
+    padding-bottom: 68px;
     padding-left: 425px;
 
     text-align: left;
   }
 
   .extra__text::before {
-    top: 50%;
-    left: 100px;
+    top: 48%;
+    left: 91px;
 
     transform: translateY(-50%);
   }
 }
 
 @media (min-width: $desktop-width) {
+  .extra {
+    margin-bottom: 85px;
+  }
+
   .extra__main {
     display: flex;
     justify-content: space-between;
@@ -210,8 +218,7 @@
 
   .extra__heading {
     margin-left: -40px;
-    margin-bottom: 80px;
-
+    margin-bottom: 79px;
     width: 415px;
   }
 
@@ -226,8 +233,8 @@
   }
 
   .extra__item {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -266,11 +273,12 @@
   }
 
   .extra__text {
-    padding: 190px 40px 45px;
+    padding: 188px 40px 40px;
     text-align: center;
   }
 
   .extra__text::before {
-    top: 40%;
+    top: 95px;
+    left: 97px;
   }
 }

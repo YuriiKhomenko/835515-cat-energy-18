@@ -1,35 +1,37 @@
 .example {
   background-color: #f2f2f2;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 
 .example__heading {
   margin: 0;
-  padding-top: 30px;
-  margin-bottom: 40px;
+  padding-top: 17px;
+  margin-bottom: 23px;
 
   @include font-resize(36px, 60px);
 }
 
 .example__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-right: 10px;
+
   @include font-resize(14px, 18px);
   color: #444444;
   font-family: "Arial", sans-serif;
-  margin: 0;
-  margin-bottom: 25px;
 }
 
 .example__data {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .example__list {
   @include clear-list;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .example__item {
@@ -46,17 +48,20 @@
 
 .example__number {
   @include font-resize(24px, 24px);
+  text-transform: uppercase;
 }
 
 .example__description {
-  @include font-resize(12px, 12px);
   display: inline-block;
-  font-family: "Arial", sans-serif;
-  max-width: 87px;
-  margin-bottom: -30px;
-  background-color: #f2f2f2;
+  margin-top: 7px;
+  margin-bottom: -33px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @include font-resize(12px, 12px);
+  font-family: "Arial", sans-serif;
+  max-width: 87px;
+  background-color: #f2f2f2;
 }
 
 .example__cost {
@@ -67,17 +72,44 @@
   text-align: center;
 }
 
-.example__img {
-  display: block;
+.example__images {
+  position: relative;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  padding-bottom: 240px;
+  width: 280px;
 }
 
-.example__slider {
+.example__img {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 320px;
+  max-width: none;
+  height: 240px;
+}
+
+.example__img--after {
+  display: none;
+}
+
+.example__controls {
   display: flex;
+  margin: 0 auto;
+  width: 280px;
 
   @include font-resize(16px, 20px);
-  justify-content: center;
+  text-transform: uppercase;
+}
+
+.example__before {
+  padding-left: 43px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.example__after {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,7 +119,8 @@
 
   .example__heading {
     @include font-resize(60px, 60px);
-    margin-bottom: 70px;
+    margin-bottom: 66px;
+    padding-top: 42px;
   }
 
   .example__text {
@@ -121,31 +154,60 @@
 
   .example__cost {
     @include font-resize(20px, 20px);
+    padding-top: 7px;
     text-align: right;
     width: 192px;
   }
 
-  .example__interactive {
-    background-color: #f2f2f2;
-    padding-bottom: 65px;
+  .example__price {
+    display: block;
+    padding-top: 9px;
   }
 
-  .example__slider {
+  .example__gallery {
     @include font-resize(20px, 20px);
+    position: relative;
+    margin-bottom: 68px;
   }
 
-  .example__prog-bar {
-    width: 444px;
+  .example__images {
+    width: 690px;
+    height: 517px;
+    margin-bottom: 39px;
+  }
+
+  .example__img {
+    top: 10px;
+    left: 3px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .example__img--after {
+    display: block;
+  }
+
+  .example__controls {
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 708px;
   }
 
   .example__before {
-    padding-bottom: 7px;
-    border-bottom: 1px dashed #bebebe;
+    @include font-resize(20px, 20px);
+    padding: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
   }
 
   .example__after {
-    padding-bottom: 7px;
-    border-bottom: 1px dashed #bebebe;
+    @include font-resize(20px, 20px);
+    padding: 0;
+    padding-bottom: 6px;
+    margin-left: 24px;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 
@@ -163,19 +225,30 @@
     width: 650px;
   }
 
-  .example__interactive {
+  .example__slider {
     width: 650px;
   }
 
   .example__heading {
     background-color: #ffffff;
-    margin-top: -150px;
-    margin-bottom: 150px;
+    margin-top: -175px;
+    margin-bottom: 145px;
   }
 
   .example__text {
     margin-bottom: 70px;
-    padding-right: 180px;
+    padding-right: 80px;
+  }
+
+  .example__images {
+    margin-top: -200px;
+    margin-right: -40px;
+    margin-bottom: 52px;
+  }
+
+  .example__controls {
+    padding-right: 0;
+    padding-left: 140px;
   }
 
   .example__data {
@@ -191,10 +264,27 @@
   }
 
   .example__cost {
+    display: flex;
+    padding-top: 29px;
     width: 330px;
   }
 
   .example__price {
-    padding-left: 60px;
+    padding-top: 0;
+    padding-left: 66px;
+  }
+
+  .example__gallery {
+    margin-bottom: 30px;
+  }
+
+  .example__before:hover,
+  .example__after:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .example__before:active,
+  .example__after:active {
+    border-bottom: none;
   }
 }

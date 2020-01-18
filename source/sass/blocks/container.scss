@@ -6,15 +6,14 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    max-width: none;
-    width: 768px;
     padding: 0 30px;
+    max-width: 900px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1300px;
     padding: 0 40px;
+    max-width: 1300px;
   }
 }
