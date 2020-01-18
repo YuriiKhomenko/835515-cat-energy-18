@@ -33,12 +33,9 @@
   padding-bottom: 14px;
   padding-left: 13px;
   width: 100%;
-  border: 1px solid #e6e6e6;
-}
-
-.form__input::placeholder {
   color: #444444;
   text-transform: uppercase;
+  border: 1px solid #e6e6e6;
 }
 
 .form__fieldset--radio {
@@ -194,6 +191,7 @@
   height: 30px;
   appearance: none;
   border: 1px solid #cfcfcf;
+  cursor: pointer;
 
   &:checked::before {
     position: absolute;
@@ -416,9 +414,7 @@
     border: 2px solid #444444;
   }
 
-  .form__input--main:invalid,
-  .form__input--email:invalid,
-  .form__input--tel:invalid {
+  .form__input--invalid {
     border: 2px solid #ff8282;
   }
 
@@ -446,8 +442,26 @@
     width: 570px;
   }
 
-  .form__input--email:hover .form__label--email {
+  .form__label--emailact::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 13px;
     background-image: url("../img/icon-mail-green.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  .form__label--emailinv::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/icon-mail-invalid.svg");
+    background-repeat: no-repeat;
+    content: "";
   }
 
   .form__legend--extra {

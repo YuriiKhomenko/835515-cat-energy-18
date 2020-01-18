@@ -105,6 +105,11 @@
 .example__before {
   padding-left: 43px;
   margin-right: 19px;
+  cursor: pointer;
+}
+
+.example__after {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -271,5 +276,15 @@
 
   .example__gallery {
     margin-bottom: 30px;
+  }
+
+  .example__before:hover,
+  .example__after:hover {
+    border-bottom: 1px solid #989898;
+  }
+
+  .example__before:active,
+  .example__after:active {
+    border-bottom: none;
   }
 }
