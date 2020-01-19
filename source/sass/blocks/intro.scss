@@ -23,7 +23,7 @@
   z-index: -1;
 
   @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px 305px;
   }
@@ -149,7 +149,7 @@
     z-index: -1;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
       background-size: 720px 696px;
     }
