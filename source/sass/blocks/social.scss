@@ -16,7 +16,6 @@
 
 .social__item {
   display: block;
-  width: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,5 +28,34 @@
     width: 324px;
     border: none;
     justify-content: center;
+    margin-left: 18px;
+  }
+
+  .social__image--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__image--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__image--insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--instagram {
+    margin-right: 28px;
+    margin-left: 28px;
+  }
+
+  .social__link--fb {
+    margin-top: -5px;
+  }
+
+  .social__item--fb {
+    margin-top: -6px;
   }
 }
