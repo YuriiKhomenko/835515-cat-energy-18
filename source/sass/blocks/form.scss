@@ -5,6 +5,10 @@
   border: none;
 }
 
+.form__fieldset--basic {
+  margin-bottom: 14px;
+}
+
 .form__list {
   @include clear-list();
 }
@@ -118,8 +122,17 @@
   }
 }
 
+.form__fieldset--contact {
+  margin-bottom: 18px;
+}
+
 .form__legend--contacts {
   width: 200px;
+  margin-bottom: 33px;
+}
+
+.form__label--email {
+  margin-right: 12px;
 }
 
 .form__item--email {
@@ -127,14 +140,18 @@
 
   &::before {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 13px;
     width: 17px;
     height: 13px;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     content: "";
   }
+}
+
+.form__label--tel {
+  margin-right: 10px;
 }
 
 .form__item--tel {
@@ -411,11 +428,11 @@
   .form__input--main:active,
   .form__input--email:active,
   .form__input--tel:active {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   .form__input--invalid {
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
   }
 
   .form__input--radio:hover {
