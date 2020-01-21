@@ -2,6 +2,11 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+.page-header__image {
+  width: 191px;
+  height: 38px;
+}
+
 .page-header__top {
   display: flex;
   padding-top: 12px;
@@ -34,13 +39,18 @@
     justify-content: space-between;
   }
 
+  .page-header__image {
+    width: 173px;
+    height: 58px;
+  }
+
   .page-header__menu-button {
     display: none;
   }
 
   .page-header {
     border: none;
-    margin-bottom: 53px;
+    margin-bottom: 58px;
   }
 
   .page-header__top {
@@ -53,6 +63,11 @@
     margin-bottom: 108px;
   }
 
+  .page-header__image {
+    width: 202px;
+    height: 59px;
+  }
+
   .page-header__wrapper {
     padding-top: 0;
   }
@@ -62,12 +77,12 @@
   }
 
   .page-header__top {
-    padding-top: 50px;
+    padding-top: 40px;
     width: 50%;
   }
 
   .page-header__nav {
-    padding-top: 50px;
+    padding-top: 42px;
     width: 50%;
   }
 }

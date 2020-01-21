@@ -140,8 +140,8 @@
 
   &::before {
     position: absolute;
-    top: 15px;
-    right: 13px;
+    top: 17px;
+    right: 16px;
     width: 17px;
     height: 13px;
     background-image: url("../img/icon-mail.svg");
@@ -159,8 +159,8 @@
 
   &::before {
     position: absolute;
-    top: 17px;
-    right: 15px;
+    top: 15px;
+    right: 13px;
     width: 20px;
     height: 20px;
     background-image: url("../img/icon-phone.svg");
@@ -320,6 +320,24 @@
   .form__legend--contacts {
     margin-bottom: 71px;
     width: 551px;
+  }
+
+  .form__fieldset--contact {
+    margin-bottom: 11px;
+  }
+
+  .form__item--email::before {
+    top: 25px;
+    right: 18px;
+  }
+
+  .form__label--tel {
+    margin-right: 13px;
+  }
+
+  .form__item--tel::before {
+    top: 23px;
+    right: 16px;
   }
 
   .form__item--email {
