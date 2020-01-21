@@ -14,6 +14,10 @@
   @include font-resize(16px, 16px);
 }
 
+.developed__image {
+  color: #231f20;
+}
+
 @media (min-width: $tablet-width) {
   .developed {
     margin-top: -8px;
@@ -21,5 +25,17 @@
 
   .developed__name {
     margin-right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developed__image:hover {
+    color: #68b738;
+  }
+
+  .developed:active .developed__image,
+  .developed:active {
+    opacity: 0.3;
+    color: #68b738;
   }
 }

@@ -4,13 +4,13 @@
 
 .page-footer__logo {
   display: block;
-  padding-top: 40px;
+  padding-top: 45px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .page-footer__social {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,5 +30,13 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     padding-top: 64px;
+  }
+
+  .page-footer__logo:hover {
+    opacity: 0.8;
+  }
+
+  .page-footer__logo:active {
+    opacity: 0.3;
   }
 }

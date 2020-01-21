@@ -18,6 +18,12 @@
   display: block;
 }
 
+.social__image--vk,
+.social__image--fb,
+.social__image--insta {
+  color: #231f20;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     border: none;
@@ -57,5 +63,20 @@
 
   .social__item--fb {
     margin-top: -6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__image--vk:hover,
+  .social__image--fb:hover,
+  .social__image--insta:hover {
+    color: #68b738;
+  }
+
+  .social__image--vk:active,
+  .social__image--fb:active,
+  .social__image--insta:active {
+    color: #68b738;
+    opacity: 0.3;
   }
 }

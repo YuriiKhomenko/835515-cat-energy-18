@@ -40,6 +40,7 @@
   width: 320px;
   height: 360px;
   background-image: url("../img/bg-map-mobile@1x.png");
+  margin: 0 auto;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -166,6 +167,7 @@
     z-index: 0;
     width: 1300px;
     height: 400px;
+
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi),
