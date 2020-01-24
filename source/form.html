@@ -5,8 +5,9 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
   <link href="css/style.min.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </head>
 <body>
   <div style="display:none">
@@ -40,7 +41,7 @@
             <img class="page-header__image" src="img/logo-mobile.svg" alt="Лого Cat Energy">
           </picture>
         </a>
-        <button class="page-header__menu-button page-header--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__menu-button page-header__menu-button--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list main-nav__list--catalog">
@@ -58,6 +59,7 @@
     </div>
   </header>
   <main>
+    <h1 class="visually-hidden">Cat Energy - Подбор программы</h1>
     <section class="program">
       <div class="container">
         <h2 class="program__heading">Подбор программы</h2>
@@ -160,7 +162,7 @@
         </div>
       </div>
       <div class="contact__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1579552132491!5m2!1sru!2spl" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1579552132491!5m2!1sru!2spl" width="320" height="400" style="border:0;" allowfullscreen="">
         </iframe>
         <img class="contact__pin" width="55" height="53" src="img/map-pin.png" alt="Карта проезда к Cat Energy: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </div>

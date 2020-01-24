@@ -1,4 +1,6 @@
 .slider__switch {
+  display: flex;
+  justify-content: flex-start;
   margin-top: 4px;
   margin-right: 17px;
   padding-top: 3px;
@@ -14,7 +16,6 @@
 }
 
 .slider__switch-thumb {
-  float: left;
   width: 35px;
   height: 6px;
   background-color: #68b738;

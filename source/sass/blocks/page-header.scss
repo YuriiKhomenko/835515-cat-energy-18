@@ -24,11 +24,11 @@
   cursor: pointer;
 }
 
-.page-header--open {
+.page-header__menu-button--open {
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
-.page-header--close {
+.page-header__menu-button--close {
   background-image: url("../img/icon-close.svg");
 }
 
@@ -85,12 +85,12 @@
   }
 
   .page-header__top {
-    padding-top: 40px;
+    padding-top: 54px;
     width: 50%;
   }
 
   .page-header__nav {
-    padding-top: 42px;
+    padding-top: 56px;
     width: 50%;
   }
 }
