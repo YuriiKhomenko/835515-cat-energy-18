@@ -15,7 +15,8 @@
 @media (min-width: $tablet-width) {
   .product-table {
     @include font-resize(16px, 16px);
-    height: 92px;
+    height: 91px;
+    width: 100%;
   }
 
   .product-table__data {
