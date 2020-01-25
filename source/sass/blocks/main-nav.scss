@@ -8,6 +8,10 @@
   margin-left: -20px;
 }
 
+.main-nav__list.main-nav__list--nojs {
+  display: block;
+}
+
 .main-nav__link {
   display: block;
 
@@ -23,6 +27,10 @@
   .main-nav__list {
     display: flex;
     margin: 0;
+  }
+
+  .main-nav__list.main-nav__list--nojs {
+    display: flex;
   }
 
   .main-nav__item {

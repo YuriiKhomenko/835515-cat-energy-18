@@ -2,6 +2,10 @@
 var button = document.querySelector(".page-header__menu-button");
 var navigation = document.querySelector(".main-nav__list");
 
+navigation.classList.remove("main-nav__list--nojs");
+button.classList.remove('page-header__menu-button--close');
+button.classList.add('page-header__menu-button--open');
+
 if (button) {
   button.addEventListener("click", function() {
     if (button.classList.contains("page-header__menu-button--open")) {
