@@ -30,25 +30,25 @@
 
 .contact__map iframe {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 360px;
   z-index: 2;
 }
 
 .contact__map {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 360px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 100vw 360px;
+  background-size: 100% 360px;
   margin: 0 auto;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
     background-repeat: no-repeat;
-    background-size: 100vw 360px;
+    background-size: 100% 360px;
   }
 }
 
@@ -89,24 +89,24 @@
 
   .contact__map iframe {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     z-index: 2;
   }
 
   .contact__map {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 100vw 400px;
+    background-size: 100% 400px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
       background-repeat: no-repeat;
-      background-size: 100vw 400px;
+      background-size: 100% 400px;
     }
   }
 
@@ -163,7 +163,7 @@
 
   .contact__map iframe {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     z-index: 2;
   }
@@ -171,17 +171,17 @@
   .contact__map {
     position: relative;
     z-index: 0;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     background-repeat: no-repeat;
-    background-size: 100vw 400px;
+    background-size: 100% 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
       background-repeat: no-repeat;
-      background-size: 100vw 400px;
+      background-size: 100% 400px;
     }
   }
 
